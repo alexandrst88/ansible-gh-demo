@@ -1,0 +1,12 @@
+---
+- name: create security_audit system group
+  group:
+    name: security_audit
+    system: true
+    state: present
+
+- name: create security_audit system user
+  user:
+    name: security_audit
+    system: true
+    group: security_audit

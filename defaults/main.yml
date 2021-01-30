@@ -1,0 +1,25 @@
+---
+# defaults file for gh-demo
+
+ubuntu_os_packages:
+  - sysstat
+  - iotop
+  - iftop
+  - python3-pip
+  - rsync
+  - unzip
+  - jq
+
+centos_os_packages:
+  - sysstat
+  - iotop
+  - python3-pip
+  - rsync
+  - unzip
+  - jq
+
+pip3_packages:
+  - awscli
+  - requests
+  - botocore
+  - boto3
