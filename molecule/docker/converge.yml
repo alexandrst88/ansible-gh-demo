@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: "Include base"
+    - name: "Include gh-demo"
       include_role:
-        name: "base"
+        name: "gh-demo"

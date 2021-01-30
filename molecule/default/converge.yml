@@ -3,6 +3,6 @@
   hosts: all
   become: true
   tasks:
-    - name: "Include base"
+    - name: "Include gh-demo"
       include_role:
-        name: "base"
+        name: "gh-demo"

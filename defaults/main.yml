@@ -1,5 +1,5 @@
 ---
-# defaults file for base
+# defaults file for gh-demo
 
 ubuntu_os_packages:
   - sysstat
