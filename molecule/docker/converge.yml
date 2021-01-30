@@ -4,4 +4,4 @@
   tasks:
     - name: "Include gh-demo"
       include_role:
-        name: "gh-demo"
+        name: "ansible-gh-demo"
