@@ -1,0 +1,12 @@
+---
+- name: Install goss
+  get_url:
+    url: "https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64"
+    dest: "/usr/local/bin/goss"
+    mode: 0655
+    checksum: sha256:827e354b48f93bce933f5efcd1f00dc82569c42a179cf2d384b040d8a80bfbfb
+
+- name: Ensure goss is executable
+  file:
+    path: "/usr/local/bin/goss"
+    mode: 0655
