@@ -26,3 +26,6 @@ jobs:
       - name: Test with molecule
         run: |
           molecule test -s docker
+        env:
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'

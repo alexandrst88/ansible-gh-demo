@@ -7,6 +7,9 @@ platforms:
   - name: instance
     image: quay.io/paulfantom/molecule-systemd:ubuntu-18.04
     pre_build_image: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
 provisioner:
   name: ansible
   inventory:
