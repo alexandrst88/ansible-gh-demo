@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       max-parallel: 4
       matrix:
@@ -24,7 +24,7 @@ jobs:
         run: |
           sudo apt install docker
           python3 -m pip install --upgrade pip
-          python3 -m pip install -r requirements.txt
+          python3 -m pip install -r test-requirements.txt
       - name: Test with molecule
         run: |
           molecule test
